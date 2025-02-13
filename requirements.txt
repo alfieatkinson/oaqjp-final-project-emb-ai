@@ -5,6 +5,7 @@ attrs==23.2.0
 babel==2.16.0
 bcrypt==4.0.1
 beautifulsoup4==4.12.3
+blinker==1.9.0
 blivet==3.10.0
 blivet-gui==2.6.0
 boto3==1.36.7
@@ -37,13 +38,16 @@ executing==2.1.0
 fedora-third-party==0.10
 file-magic==0.4.0
 filelock==3.13.1
+Flask==3.1.0
 humanize==3.13.1
 idna==3.7
 initial-setup==0.3.100
 ipykernel==6.29.5
 ipython==8.29.0
 iso639==0.1.4
+itsdangerous==2.2.0
 jedi==0.19.1
+Jinja2==3.1.5
 jmespath==1.0.1
 jsonschema==4.19.1
 jsonschema-specifications==2023.11.2
@@ -54,6 +58,7 @@ libcomps==0.1.20
 libdnf==0.73.4
 louis==3.28.0
 lxml==5.1.0
+MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 nest-asyncio==1.6.0
 nftables==0.1
@@ -125,4 +130,5 @@ urllib3==1.26.20
 virtualenv==20.21.1
 wcwidth==0.2.13
 websocket-client==1.3.3
+Werkzeug==3.1.3
 xkbregistry==0.3
