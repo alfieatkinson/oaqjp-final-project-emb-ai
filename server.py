@@ -8,13 +8,13 @@ def emotionDetector():
     # Get the text from the incoming JSON request
     data = request.get_json()
     text_to_analyse = data.get('text', '')
-
-    # Check if text is provided
-    if not text_to_analyse:
-        return jsonify({"error": "No text provided"}), 400
     
     # Get the emotion detection result
     result = emotion_detector(text_to_analyse)
+    
+    # If dominant emotion is None, return error message
+    if result['dominant_emotion'] is None:
+        return "Invalid text! Please try again!"
     
     # Format the response
     emotion_scores = result
