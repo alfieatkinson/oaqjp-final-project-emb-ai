@@ -1,7 +1,20 @@
+"""emotion_detection.py
+
+This module contains the emotion detection function that uses the Watson NLP API to detect the emotion of a given text.
+"""
+
 import requests
 import json
 
 def emotion_detector(text_to_analyse):
+    """Function to detect the emotion of a given text using the Watson NLP API
+
+    Args:
+        text_to_analyse (str): The text to analyse for emotion detection
+
+    Returns:
+        dict[str, float | str]: A dictionary containing the emotion scores and the dominant emotion
+    """
     url = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
     headers = {
         "grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"
